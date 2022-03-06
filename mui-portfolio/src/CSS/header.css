@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+h1,
+h2 {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.avatar {
+  margin-top: 10em;
+}
+
+.name {
+  z-index: 999;
+  color: #fff;
+}
+
+.job1 {
+  z-index: 999;
+  color: #fff;
+}
+
+.job2 {
+  z-index: 999;
+  color: #fff;
+}
+
+.grid-job2 {
+  margin-top: -3%;
+}
+/*# sourceMappingURL=header.css.map */
