@@ -9,7 +9,7 @@ import TextField from "@mui/material/TextField";
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
-    background: "#233",
+    background: "#313c33",
     height: "100vh",
   },
   heading: {
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 const CssTextField = styled(TextField)({
   "& label": {
-    color: "tan",
+    color: "#a08c7d",
   },
   "& label.Mui-focused": {
     color: "tomato",
@@ -37,14 +37,14 @@ const CssTextField = styled(TextField)({
   },
   "& .MuiOutlinedInput-root": {
     "& fieldset": {
-      borderColor: "tan",
+      borderColor: "#a08c7d",
     },
     "&:hover fieldset": {
-      borderColor: "tan",
+      borderColor: "#a08c7d",
       borderWidth: "2px",
     },
     "&.Mui-focused fieldset": {
-      borderColor: "tan",
+      borderColor: "#a08c7d",
     },
   },
 });
@@ -90,7 +90,7 @@ const Contact = () => {
             sx={{
               mt: "1rem",
               color: "tomato",
-              borderColor: "tan",
+              borderColor: "#a08c7d",
               borderWidth: "1px",
               ":hover": {
                 borderColor: "tomato",

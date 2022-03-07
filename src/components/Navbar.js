@@ -33,7 +33,7 @@ const menuItems = [
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#f4ba69",
+      main: "#fac57d",
     },
     secondary: {
       main: red[800],
@@ -50,7 +50,7 @@ const Navbar = () => {
         component="div"
         sx={{
           width: 250,
-          background: "#e53935",
+          background: "#b71a3b",
           height: "100%",
         }}
       >
@@ -78,13 +78,13 @@ const Navbar = () => {
               component={Link}
               to={item.listPath}
               sx={{
-                color: "#ffe0b2",
+                color: "#fac57d",
                 margin: "0 2rem",
               }}
             >
               <ListItemIcon
                 sx={{
-                  color: "#ffe0b2",
+                  color: "#fac57d",
                 }}
               >
                 {item.listIcon}
@@ -112,7 +112,7 @@ const Navbar = () => {
               <IconButton onClick={() => setOpen(true)}>
                 <KeyboardDoubleArrowLeftIcon color="secondary" />
               </IconButton>
-              <Typography variant="h5" color="#8a1c1c">
+              <Typography variant="h5" color="#b71a3b">
                 Portfolio
               </Typography>
             </Toolbar>

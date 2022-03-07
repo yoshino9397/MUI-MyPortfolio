@@ -70,7 +70,7 @@ const projects = [
 
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#233",
+    background: "#313c33",
     height: "100%",
   },
   
@@ -116,7 +116,7 @@ const Portfolio = () => {
                 <Button
                   size="small"
                   sx={{
-                    color: "#8a1c1c",
+                    color: "#b71a3b",
                     fontWeight: "bold",
                     transition: ".2s",
                     ":hover": {
@@ -129,7 +129,7 @@ const Portfolio = () => {
                 <Button
                   size="small"
                   sx={{
-                    color: "#8a1c1c",
+                    color: "#b71a3b",
                     fontWeight: "bold",
                     transition: ".2s",
                     ":hover": {
