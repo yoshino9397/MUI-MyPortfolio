@@ -12,12 +12,12 @@ const theme = createTheme({});
 const Footer = () => {
   return (
     <ThemeProvider theme={theme}>
-      <BottomNavigation sx={{ bgcolor: "#222" }}>
+      <BottomNavigation sx={{ bgcolor: "#313c33" }}>
         <Link href="https://github.com/yoshino9397">
           <BottomNavigationAction
             icon={<GitHubIcon />}
             sx={{
-              color: "tan",
+              color: "#fac57d",
               ":hover": {
                 color: "tomato",
               },
@@ -28,7 +28,7 @@ const Footer = () => {
           <BottomNavigationAction
             icon={<LinkedInIcon />}
             sx={{
-              color: "tan",
+              color: "#fac57d",
               ":hover": {
                 color: "tomato",
               },
@@ -39,7 +39,7 @@ const Footer = () => {
           <BottomNavigationAction
             icon={<InstagramIcon />}
             sx={{
-              color: "tan",
+              color: "#fac57d",
               ":hover": {
                 color: "tomato",
               },

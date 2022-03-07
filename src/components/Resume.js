@@ -22,10 +22,10 @@ const theme = createTheme({
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#313c33",
   },
   heading: {
-    color: "tomato",
+    color: "#d02a2a",
     padding: "3rem 0",
     textTransform: "uppercase",
   },
@@ -49,7 +49,7 @@ const Resume = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="Jun,2021 - present"
-          iconStyle={{ background: "#8a1c1c", color: "tan" }}
+          iconStyle={{ background: "#7e0f12", color: "tan" }}
           icon={<SchoolIcon />}
         >
           <h1 className="vertical-timeline-element-title">CICCC Student</h1>
@@ -78,7 +78,7 @@ const Resume = () => {
           icon={<VolunteerActivismIcon />}
           iconStyle={{
             background: "tomato",
-            color: "#8a1c1c",
+            color: "#7e0f12",
             boxShadow: "0 0 0 4px tan",
           }}
         >
@@ -95,7 +95,7 @@ const Resume = () => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2017 - 2021"
-          iconStyle={{ background: "#8a1c1c", color: "tan" }}
+          iconStyle={{ background: "#7e0f12", color: "tan" }}
           icon={<SchoolIcon />}
         >
           <h1 className="vertical-timeline-element-title">College Student</h1>
@@ -111,8 +111,8 @@ const Resume = () => {
         <VerticalTimelineElement
           iconStyle={{
             background: "tan",
-            color: "#8a1c1c",
-            boxShadow: "0 0 0 4px #8a1c1c",
+            color: "#7e0f12",
+            boxShadow: "0 0 0 4px #7e0f12",
           }}
           icon={<BabyChangingStationIcon />}
         />
