@@ -9,62 +9,62 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
+import Link from "@mui/material/Link";
 
-import project1 from "../images/html-css-javascript-lg.jpg";
-import project2 from "../images/html-css-javascript.jpg";
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
+import project1 from "../images/whereareyou";
+import project2 from "../images/phantom";
+import project3 from "../images/musician";
+import project4 from "../images/muifolio";
 import project5 from "../images/react-redux.jpg";
 import project6 from "../images/react.png";
 
 const projects = [
   {
-    name: "Project 1",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus
-    iste alias sunt veritatis nisi dolores!`,
+    name: "Horror Game Website",
+    description: `Developed front-end user experience using HTML,SASS,Javascript and prepared some gimmicks so that users can experience the world view of the game from the site as well.Designed all the pictures on the site and drew them in Clip Studio.
+    `,
     image: project1,
+    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
   },
   {
-    name: "Project 2",
+    name: "Mystery Game Website",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project2,
+    url: "https://yoshino9397.github.io/TrainProject/HTML/enter.html",
   },
   {
-    name: "Project 3",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "Musician website",
+    description: `Developed with a focus on HTML, CSS, and Javascript, with easy-to-read and artist-like creative design in mind.Responsive design, changing the menu bar display on PC and smartphone, and creating website layout / user interface.
+    `,
     image: project3,
+    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
   },
   {
-    name: "Project 4",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    name: "MUI Portfolio",
+    description: `I have developed a simple but dynamic React project, mainly using React and Material UI.Created Responsive User Experience with MUI Grids that allows the user to view any of my works which are organized.`,
     image: project4,
+    url: "https://yoshino-mui-portfolio.netlify.app/",
   },
   {
-    name: "Project 5",
+    name: "React Project",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project5,
+    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
   },
   {
-    name: "Project 6",
+    name: "E-commerce",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project6,
+    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
   },
 ];
 
@@ -73,7 +73,6 @@ const useStyles = makeStyles({
     background: "#313c33",
     height: "100%",
   },
-  
 });
 
 const Portfolio = () => {
@@ -97,12 +96,14 @@ const Portfolio = () => {
               }}
             >
               <CardActionArea>
-                <CardMedia
-                  component="img"
-                  alt="Project"
-                  height="140"
-                  image={project.image}
-                />
+                <Link href={project.url}>
+                  <CardMedia
+                    component="img"
+                    alt="Project"
+                    height="140"
+                    image={project.image}
+                  />
+                </Link>
                 <CardContent>
                   <Typography variant="h5" gutterBottom>
                     {project.name}
@@ -126,19 +127,21 @@ const Portfolio = () => {
                 >
                   Share
                 </Button>
-                <Button
-                  size="small"
-                  sx={{
-                    color: "#b71a3b",
-                    fontWeight: "bold",
-                    transition: ".2s",
-                    ":hover": {
-                      fontSize: "11px",
-                    },
-                  }}
-                >
-                  Live Demo
-                </Button>
+                <Link href={project.url}>
+                  <Button
+                    size="small"
+                    sx={{
+                      color: "#b71a3b",
+                      fontWeight: "bold",
+                      transition: ".2s",
+                      ":hover": {
+                        fontSize: "11px",
+                      },
+                    }}
+                  >
+                    Live Demo
+                  </Button>
+                </Link>
               </CardActions>
             </Card>
           </Grid>
