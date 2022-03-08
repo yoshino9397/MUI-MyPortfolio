@@ -11,27 +11,24 @@ import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 
-import project1 from "../images/whereareyou";
-import project2 from "../images/phantom";
-import project3 from "../images/musician";
-import project4 from "../images/muifolio";
+import project1 from "../images/whereareyou.png";
+import project2 from "../images/phantom.png";
+import project3 from "../images/musician.png";
+import project4 from "../images/muifolio.png";
 import project5 from "../images/react-redux.jpg";
 import project6 from "../images/react.png";
 
 const projects = [
   {
     name: "Horror Game Website",
-    description: `Developed front-end user experience using HTML,SASS,Javascript and prepared some gimmicks so that users can experience the world view of the game from the site as well.Designed all the pictures on the site and drew them in Clip Studio.
-    `,
+    description: `Developed front-end user experience using HTML,SASS,Javascript and prepared some gimmicks so that users can experience the world view of the game from the site as well.Designed all the pictures on the site and drew them in Clip Studio.`,
     image: project1,
     url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
   },
   {
     name: "Mystery Game Website",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+    consequatur magni quod nesciunt necessitatibus molestiae non eligendi, magnam est aliquam recusandae? Magnam soluta minu iste alias sunt veritatis nisi dolores!eligendi, magnam est `,
     image: project2,
     url: "https://yoshino9397.github.io/TrainProject/HTML/enter.html",
   },
@@ -40,7 +37,7 @@ const projects = [
     description: `Developed with a focus on HTML, CSS, and Javascript, with easy-to-read and artist-like creative design in mind.Responsive design, changing the menu bar display on PC and smartphone, and creating website layout / user interface.
     `,
     image: project3,
-    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
+    url: "https://yoshino9397.github.io/Ysinger/HTML/web.html",
   },
   {
     name: "MUI Portfolio",
@@ -102,10 +99,20 @@ const Portfolio = () => {
                     alt="Project"
                     height="140"
                     image={project.image}
+                    sx={{
+                      ":hover": {
+                        transform: "scale(0.9)",
+                      },
+                    }}
                   />
                 </Link>
                 <CardContent>
-                  <Typography variant="h5" gutterBottom>
+                  <Typography
+                    variant="h5"
+                    color="#b71a3b"
+                    gutterBottom
+                    sx={{ textAlign: "center" }}
+                  >
                     {project.name}
                   </Typography>
                   <Typography variant="body2" color="textSecondary">
@@ -117,7 +124,7 @@ const Portfolio = () => {
                 <Button
                   size="small"
                   sx={{
-                    color: "#b71a3b",
+                    color: "#cb401b",
                     fontWeight: "bold",
                     transition: ".2s",
                     ":hover": {
@@ -127,11 +134,11 @@ const Portfolio = () => {
                 >
                   Share
                 </Button>
-                <Link href={project.url}>
+                <Link href={project.url} underline="none">
                   <Button
                     size="small"
                     sx={{
-                      color: "#b71a3b",
+                      color: "#cb401b",
                       fontWeight: "bold",
                       transition: ".2s",
                       ":hover": {
