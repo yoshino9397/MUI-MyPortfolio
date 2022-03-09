@@ -13,6 +13,24 @@ import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
 import BabyChangingStationIcon from "@mui/icons-material/BabyChangingStation";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
+import IconButton from "@mui/material/IconButton";
+import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+
+import { IoLogoHtml5 } from "react-icons/io5";
+import { IoLogoCss3 } from "react-icons/io5";
+import { IoLogoSass } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiReact } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiExpress } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiBootstrap } from "react-icons/si";
+import { SiMaterialui } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+import { SiMongodb } from "react-icons/si";
+import { IoColorPalette } from "react-icons/io5";
 
 const theme = createTheme({
   typography: {
@@ -25,22 +43,91 @@ const useStyles = makeStyles((theme) => ({
     background: "#313c33",
   },
   heading: {
-    color: "#d02a2a",
     padding: "3rem 0",
     textTransform: "uppercase",
   },
+  skillContainer: {
+    background: "#7e0f12",
+    paddingBottom: "3rem",
+  },
 }));
+
+const skills = [
+  { icon: <IoLogoHtml5 />, name: "HTML" },
+  { icon: <IoLogoCss3 />, name: "CSS" },
+  { icon: <IoLogoSass />, name: "SASS" },
+  { icon: <IoLogoJavascript />, name: "JS" },
+  { icon: <SiReact />, name: "React" },
+  { icon: <IoLogoNodejs />, name: "Node" },
+  { icon: <SiExpress />, name: "Express.js" },
+  { icon: <SiTypescript />, name: "Typescript" },
+  { icon: <SiBootstrap />, name: "Bootstrap" },
+  { icon: <SiMaterialui />, name: "MUI" },
+  { icon: <GrMysql />, name: "MySQL" },
+  { icon: <SiMongodb />, name: "Mongodb" },
+  { icon: <IoColorPalette />, name: "ClipStudio Paint" },
+];
 
 const Resume = () => {
   const classes = useStyles();
   return (
     <Box component="header" className={classes.mainContainer}>
       <ThemeProvider theme={theme}>
+        <Box component="div" className={classes.skillContainer}>
+          <Typography
+            variant="h4"
+            align="center"
+            className={classes.heading}
+            sx={{ mt: "4rem", fontSize: "3.5rem", color: "tan" }}
+          >
+            My Skills
+          </Typography>
+          <Grid container justifyContent="center">
+            {skills.map((skill, i) => (
+              <Grid item xs={8} sm={3} md={1} key={i} sx={{ m: "0 2rem" }}>
+                <Card
+                  sx={{
+                    maxWidth: 110,
+                    maxHeight: 140,
+                    m: "1rem auto",
+                    bgcolor: "#e2dac5",
+                  }}
+                >
+                  <CardContent>
+                    <IconButton
+                      size="large"
+                      sx={{
+                        bottom: "5px",
+                        left: "13px",
+                        color: "#313c33",
+                      }}
+                    >
+                      {skill.icon}
+                    </IconButton>
+                    <Typography
+                      variant="h6"
+                      color="#b71a3b"
+                      sx={{
+                        m: "0 auto",
+                        textAlign: "center",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {skill.name}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      </ThemeProvider>
+      <ThemeProvider theme={theme}>
         <Typography
           variant="h4"
           align="center"
           className={classes.heading}
-          sx={{ mt: "4rem", fontSize: "3.5rem" }}
+          sx={{ mt: "4rem", fontSize: "3.5rem", color: "#d02a2a" }}
         >
           My Experience
         </Typography>
