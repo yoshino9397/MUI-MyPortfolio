@@ -24,6 +24,7 @@ const projects = [
     description: `Developed front-end user experience using HTML,SASS,Javascript and prepared some gimmicks so that users can experience the world view of the game from the site as well.Designed all the pictures on the site and drew them in Clip Studio.`,
     image: project1,
     url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
+    code: "https://github.com/yoshino9397/whrereAreYou",
   },
   {
     name: "Mystery Game Website",
@@ -31,6 +32,7 @@ const projects = [
     consequatur magni quod nesciunt necessitatibus molestiae non eligendi, magnam est aliquam recusandae? Magnam soluta minu iste alias sunt veritatis nisi dolores!eligendi, magnam est `,
     image: project2,
     url: "https://yoshino9397.github.io/TrainProject/HTML/enter.html",
+    code: "https://github.com/yoshino9397/TrainProject",
   },
   {
     name: "Musician website",
@@ -38,12 +40,14 @@ const projects = [
     `,
     image: project3,
     url: "https://yoshino9397.github.io/Ysinger/HTML/web.html",
+    code: "https://github.com/yoshino9397/Ysinger",
   },
   {
     name: "MUI Portfolio",
     description: `I have developed a simple but dynamic React project, mainly using React and Material UI.Created Responsive User Experience with MUI Grids that allows the user to view any of my works which are organized.`,
     image: project4,
     url: "https://yoshino-mui-portfolio.netlify.app/",
+    code: "https://github.com/yoshino9397/MUI-MyPortfolio",
   },
   {
     name: "React Project",
@@ -53,6 +57,7 @@ const projects = [
     iste alias sunt veritatis nisi dolores!`,
     image: project5,
     url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
+    code: "https://github.com/yoshino9397/MUI-MyPortfolio",
   },
   {
     name: "E-commerce",
@@ -62,6 +67,7 @@ const projects = [
     iste alias sunt veritatis nisi dolores!`,
     image: project6,
     url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
+    code: "https://github.com/yoshino9397/MUI-MyPortfolio",
   },
 ];
 
@@ -121,19 +127,22 @@ const Portfolio = () => {
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button
-                  size="small"
-                  sx={{
-                    color: "#cb401b",
-                    fontWeight: "bold",
-                    transition: ".2s",
-                    ":hover": {
-                      fontSize: "11px",
-                    },
-                  }}
-                >
-                  Share
-                </Button>
+                <Link href={project.code} underline="none">
+                  <Button
+                    size="small"
+                    sx={{
+                      color: "#cb401b",
+                      fontWeight: "bold",
+                      transition: ".2s",
+                      ":hover": {
+                        fontSize: "11px",
+                      },
+                    }}
+                  >
+                    Code
+                  </Button>
+                </Link>
+
                 <Link href={project.url} underline="none">
                   <Button
                     size="small"
@@ -146,7 +155,7 @@ const Portfolio = () => {
                       },
                     }}
                   >
-                    Live Demo
+                    Demo
                   </Button>
                 </Link>
               </CardActions>
