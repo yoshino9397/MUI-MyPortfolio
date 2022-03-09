@@ -84,7 +84,15 @@ const Resume = () => {
           </Typography>
           <Grid container justifyContent="center">
             {skills.map((skill, i) => (
-              <Grid item xs={8} sm={3} md={1} key={i} sx={{ m: "0 2rem" }}>
+              <Grid
+                item
+                xs={8}
+                sm={3}
+                md={2}
+                lg={1}
+                key={i}
+                sx={{ m: "0 2rem" }}
+              >
                 <Card
                   sx={{
                     maxWidth: 110,
