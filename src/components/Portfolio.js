@@ -96,6 +96,7 @@ const Portfolio = () => {
                 maxWidth: 345,
                 m: "3rem auto",
                 bgcolor: "#e2dac5",
+                boxShadow: "5px 10px 15px #1d261e",
               }}
             >
               <CardActionArea>
