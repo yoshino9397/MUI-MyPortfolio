@@ -99,6 +99,7 @@ const Resume = () => {
                     maxHeight: 140,
                     m: "1rem auto",
                     bgcolor: "#e2dac5",
+                    boxShadow: "5px 10px 10px #4d0507",
                   }}
                 >
                   <CardContent>
