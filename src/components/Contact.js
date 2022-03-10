@@ -28,14 +28,8 @@ const useStyles = makeStyles((theme) => ({
   },
   form: {
     top: "43%",
-    left: "31%",
     position: "absolute",
-  },
-  info: {
-    top: "43%",
-    left: "52%",
-    position: "absolute",
-    color: "tomato",
+    textAlign: "center",
   },
 }));
 
@@ -61,16 +55,29 @@ const Contact = () => {
             <PhoneIcon sx={{ mb: "-7px", fontSize: 30 }} />
             --------{">"}
             {">"}
+            <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
+              +1 (778)-886-0534
+            </Box>
           </Typography>
           <Typography
             variant="h5"
             className={classes.contacts}
             sx={{ mb: "1.5rem" }}
           >
-            Email ---------
+            Email -------
             <EmailIcon sx={{ mb: "-7px", fontSize: 30 }} />
-            ----------{">"}
+            -------{">"}
             {">"}
+            <Link
+              href="mailto:17j2079g@shinshu-u.ac.jp"
+              underline="none"
+              color="tomato"
+            >
+              {" "}
+              <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
+                17j2079g@shinshu-u.ac.jp
+              </Box>
+            </Link>
           </Typography>{" "}
           <Typography
             variant="h5"
@@ -79,8 +86,17 @@ const Contact = () => {
           >
             LinkedIn ------
             <LinkedInIcon sx={{ mb: "-7px", fontSize: 30 }} />
-            ----------{">"}
+            --------{">"}
             {">"}
+            <Link
+              href="https://www.linkedin.com/in/yoshino-yayama-a79365218/"
+              underline="none"
+              color="tomato"
+            >
+              <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
+                Yoshino Yayama
+              </Box>
+            </Link>
           </Typography>
           <Typography
             variant="h5"
@@ -89,41 +105,19 @@ const Contact = () => {
           >
             Github -------
             <GitHubIcon sx={{ mb: "-7px", fontSize: 30 }} />
-            ----------{">"}
+            --------{">"}
             {">"}
+            <Link
+              href="https://github.com/yoshino9397"
+              underline="none"
+              color="tomato"
+            >
+              {" "}
+              <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
+                yoshino9397
+              </Box>
+            </Link>
           </Typography>
-        </Box>
-        <Box component="div" className={classes.info}>
-          <Typography variant="h5" sx={{ mb: "1.5rem" }}>
-            +1 (778)-886-0534
-          </Typography>
-          <Link
-            href="mailto:17j2079g@shinshu-u.ac.jp"
-            underline="none"
-            color="tomato"
-          >
-            <Typography variant="h5" sx={{ mb: "1.5rem" }}>
-              17j2079g@shinshu-u.ac.jp
-            </Typography>
-          </Link>
-          <Link
-            href="https://www.linkedin.com/in/yoshino-yayama-a79365218/"
-            underline="none"
-            color="tomato"
-          >
-            <Typography variant="h5" sx={{ mb: "1.5rem" }}>
-              Yoshino Yayama
-            </Typography>
-          </Link>
-          <Link
-            href="https://github.com/yoshino9397"
-            underline="none"
-            color="tomato"
-          >
-            <Typography variant="h5" sx={{ mb: "1.5rem" }}>
-              yoshino9397
-            </Typography>
-          </Link>
         </Box>
       </Grid>
     </Box>
