@@ -7,6 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 
 const theme = createTheme({});
 const Footer = () => {
@@ -47,6 +48,16 @@ const Footer = () => {
           />
         </Link>
       </BottomNavigation>
+      <Typography
+        variant="body2"
+        color="tan"
+        bgcolor="#313c33"
+        sx={{
+          p: "5px 0 10px 0",
+        }}
+      >
+        ©️yoshinoyayama
+      </Typography>
     </ThemeProvider>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../App.css";
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
@@ -38,6 +39,9 @@ const theme = createTheme({
     secondary: {
       main: red[800],
     },
+  },
+  typography: {
+    fontFamily: ["Chakra Petch", "sans-serif"].join(","),
   },
 });
 
@@ -109,10 +113,10 @@ const Navbar = () => {
             }}
           >
             <Toolbar>
-              <IconButton onClick={() => setOpen(true)}>
+              <IconButton onClick={() => setOpen(true)} size="large">
                 <KeyboardDoubleArrowLeftIcon color="secondary" />
               </IconButton>
-              <Typography variant="h5" color="#b71a3b">
+              <Typography variant="h4" color="#b71a3b">
                 Portfolio
               </Typography>
             </Toolbar>
