@@ -3,9 +3,10 @@ import { makeStyles, styled } from "@material-ui/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import SendIcon from "@mui/icons-material/Send";
-import TextField from "@mui/material/TextField";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
@@ -17,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     textTransform: "uppercase",
   },
+  contacts: {
+    color: "tomato",
+    textAlign: "center",
+  },
   form: {
     top: "50%",
     left: "50%",
@@ -25,80 +30,59 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const CssTextField = styled(TextField)({
-  "& label": {
-    color: "#a08c7d",
-  },
-  "& label.Mui-focused": {
-    color: "tomato",
-  },
-  "& .MuiInput-underline:after": {
-    borderBottomColor: "green",
-  },
-  "& .MuiOutlinedInput-root": {
-    "& fieldset": {
-      borderColor: "#a08c7d",
-    },
-    "&:hover fieldset": {
-      borderColor: "#a08c7d",
-      borderWidth: "2px",
-    },
-    "&.Mui-focused fieldset": {
-      borderColor: "#a08c7d",
-    },
-  },
-});
-
 const Contact = () => {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.contactContainer}>
       <Grid container justifyContent="center">
-        <Box component="form" className={classes.form}>
+        <Box component="div" className={classes.form}>
           <Typography
-            variant="h5"
+            variant="h4"
             className={classes.heading}
             sx={{ mb: "1rem" }}
           >
             Contact Me
           </Typography>
-
-          <CssTextField
-            fullWidth={true}
-            label="Name"
-            variant="outlined"
-            sx={{ input: { color: "white" } }}
-          />
-          <CssTextField
-            fullWidth={true}
-            label="E-mail"
-            variant="outlined"
-            sx={{ m: "1rem 0", input: { color: "white" } }}
-          />
-          <CssTextField
-            fullWidth={true}
-            label="Message"
-            variant="outlined"
-            sx={{ input: { color: "white" } }}
-          />
-
-          <Button
-            variant="outlined"
-            fullWidth={true}
-            endIcon={<SendIcon />}
-            className={classes.button}
-            sx={{
-              mt: "1rem",
-              color: "tomato",
-              borderColor: "#a08c7d",
-              borderWidth: "1px",
-              ":hover": {
-                borderColor: "tomato",
-              },
-            }}
+          <Typography
+            variant="h5"
+            className={classes.contacts}
+            sx={{ mb: "1.5rem" }}
           >
-            Send
-          </Button>
+            Call --------
+            <PhoneIcon sx={{ mb: "-7px", fontSize: 30 }} />
+            ---------{">"}
+            {">"}
+          </Typography>
+          <Typography
+            variant="h5"
+            className={classes.contacts}
+            sx={{ mb: "1.5rem" }}
+          >
+            Email -------
+            <EmailIcon sx={{ mb: "-7px", fontSize: 30 }} />
+            ----------{">"}
+            {">"}
+          </Typography>{" "}
+          <Typography
+            variant="h5"
+            className={classes.contacts}
+            sx={{ mb: "1.5rem" }}
+          >
+            LinkedIn ----
+            <LinkedInIcon sx={{ mb: "-7px", fontSize: 30 }} />
+            -----------{">"}
+            {">"}
+          </Typography>
+          <Typography
+            variant="h5"
+            className={classes.contacts}
+            sx={{ mb: "1.5rem" }}
+          >
+            Github ------
+            <GitHubIcon sx={{ mb: "-7px", fontSize: 30 }} />
+            -----------{">"}
+            {">"}
+          </Typography>
         </Box>
       </Grid>
     </Box>
