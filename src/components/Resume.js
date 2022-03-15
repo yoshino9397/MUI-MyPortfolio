@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "../CSS/Resume.css";
+import Footer from "./Footer";
 
 import { makeStyles } from "@material-ui/styles";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -71,150 +72,157 @@ const skills = [
 const Resume = () => {
   const classes = useStyles();
   return (
-    <Box component="header" className={classes.mainContainer}>
-      <ThemeProvider theme={theme}>
-        <Box component="div" className={classes.skillContainer}>
+    <>
+      <Box component="header" className={classes.mainContainer}>
+        <ThemeProvider theme={theme}>
+          <Box component="div" className={classes.skillContainer}>
+            <Typography
+              variant="h4"
+              align="center"
+              className={classes.heading}
+              sx={{ mt: "4rem", fontSize: "3.5rem", color: "tan" }}
+            >
+              My Skills
+            </Typography>
+            <Grid container justifyContent="center">
+              {skills.map((skill, i) => (
+                <Grid
+                  item
+                  xs={8}
+                  sm={3}
+                  md={2}
+                  lg={1}
+                  key={i}
+                  sx={{ m: "0 2rem" }}
+                >
+                  <Card
+                    sx={{
+                      maxWidth: 110,
+                      maxHeight: 130,
+                      m: "1rem auto",
+                      p: "0 3px",
+                      bgcolor: "#e2dac5",
+                      boxShadow: "5px 10px 10px #4d0507",
+                    }}
+                  >
+                    <CardContent>
+                      <IconButton
+                        size="large"
+                        sx={{
+                          bottom: "5px",
+                          left: "13px",
+                          color: "#313c33",
+                        }}
+                      >
+                        {skill.icon}
+                      </IconButton>
+                      <Typography
+                        variant="h6"
+                        color="#b71a3b"
+                        sx={{
+                          m: "0 auto",
+                          textAlign: "center",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        {skill.name}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        </ThemeProvider>
+        <ThemeProvider theme={theme}>
           <Typography
             variant="h4"
             align="center"
             className={classes.heading}
-            sx={{ mt: "4rem", fontSize: "3.5rem", color: "tan" }}
+            sx={{ mt: "4rem", fontSize: "3.5rem", color: "#d02a2a" }}
           >
-            My Skills
+            My Experience
           </Typography>
-          <Grid container justifyContent="center">
-            {skills.map((skill, i) => (
-              <Grid
-                item
-                xs={8}
-                sm={3}
-                md={2}
-                lg={1}
-                key={i}
-                sx={{ m: "0 2rem" }}
-              >
-                <Card
-                  sx={{
-                    maxWidth: 110,
-                    maxHeight: 130,
-                    m: "1rem auto",
-                    p: "0 3px",
-                    bgcolor: "#e2dac5",
-                    boxShadow: "5px 10px 10px #4d0507",
-                  }}
-                >
-                  <CardContent>
-                    <IconButton
-                      size="large"
-                      sx={{
-                        bottom: "5px",
-                        left: "13px",
-                        color: "#313c33",
-                      }}
-                    >
-                      {skill.icon}
-                    </IconButton>
-                    <Typography
-                      variant="h6"
-                      color="#b71a3b"
-                      sx={{
-                        m: "0 auto",
-                        textAlign: "center",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {skill.name}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
-      </ThemeProvider>
-      <ThemeProvider theme={theme}>
-        <Typography
-          variant="h4"
-          align="center"
-          className={classes.heading}
-          sx={{ mt: "4rem", fontSize: "3.5rem", color: "#d02a2a" }}
-        >
-          My Experience
-        </Typography>
-      </ThemeProvider>
-      <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="Jun,2021 - present"
-          iconStyle={{ background: "#7e0f12", color: "tan" }}
-          icon={<SchoolIcon />}
-        >
-          <h1 className="vertical-timeline-element-title">CICCC Student</h1>
-          <h4 className="vertical-timeline-element-subtitle">Vancouver, BC</h4>
-          <p>
-            I have been studying to become a web developer, about front-end
-            languages, Java, PYTHON, etc.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2019 - Mar,2021"
-          icon={<WorkIcon />}
-        >
-          <h1 className="vertical-timeline-element-title">Internship</h1>
-          <h4 className="vertical-timeline-element-subtitle">Nagano, Japan</h4>
-          <p>
-            While working as a front-end engineer as an internship, I attended
-            company code study sessions and had employees taught me in a
-            coworking space.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="Feb,2020 - Apr,2020"
-          icon={<VolunteerActivismIcon />}
-          iconStyle={{
-            background: "tomato",
-            color: "#7e0f12",
-            boxShadow: "0 0 0 4px tan",
-          }}
-        >
-          <h1 className="vertical-timeline-element-title">Volunteer</h1>
-          <h4 className="vertical-timeline-element-subtitle">
-            Ho Chi Minh, Vietnam
-          </h4>
-          <p>
-            I mainly taught English to applicants free of charge with university
-            students who are fluent in local English on the rooftops of cafes
-            and facilities.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2017 - 2021"
-          iconStyle={{ background: "#7e0f12", color: "tan" }}
-          icon={<SchoolIcon />}
-        >
-          <h1 className="vertical-timeline-element-title">College Student</h1>
-          <h4 className="vertical-timeline-element-subtitle">
-            Shinshu University, Japan
-          </h4>
-          <p>
-            {" "}
-            I majored in the Faculty of Law, the Code of Criminal Procedure in
-            Information Crime
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          iconStyle={{
-            background: "tan",
-            color: "#7e0f12",
-            boxShadow: "0 0 0 4px #7e0f12",
-          }}
-          icon={<BabyChangingStationIcon />}
-        />
-      </VerticalTimeline>
-    </Box>
+        </ThemeProvider>
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Jun,2021 - present"
+            iconStyle={{ background: "#7e0f12", color: "tan" }}
+            icon={<SchoolIcon />}
+          >
+            <h1 className="vertical-timeline-element-title">CICCC Student</h1>
+            <h4 className="vertical-timeline-element-subtitle">
+              Vancouver, BC
+            </h4>
+            <p>
+              I have been studying to become a web developer, about front-end
+              languages, Java, PYTHON, etc.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2019 - Mar,2021"
+            icon={<WorkIcon />}
+          >
+            <h1 className="vertical-timeline-element-title">Internship</h1>
+            <h4 className="vertical-timeline-element-subtitle">
+              Nagano, Japan
+            </h4>
+            <p>
+              While working as a front-end engineer as an internship, I attended
+              company code study sessions and had employees taught me in a
+              coworking space.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Feb,2020 - Apr,2020"
+            icon={<VolunteerActivismIcon />}
+            iconStyle={{
+              background: "tomato",
+              color: "#7e0f12",
+              boxShadow: "0 0 0 4px tan",
+            }}
+          >
+            <h1 className="vertical-timeline-element-title">Volunteer</h1>
+            <h4 className="vertical-timeline-element-subtitle">
+              Ho Chi Minh, Vietnam
+            </h4>
+            <p>
+              I mainly taught English to applicants free of charge with
+              university students who are fluent in local English on the
+              rooftops of cafes and facilities.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2017 - 2021"
+            iconStyle={{ background: "#7e0f12", color: "tan" }}
+            icon={<SchoolIcon />}
+          >
+            <h1 className="vertical-timeline-element-title">College Student</h1>
+            <h4 className="vertical-timeline-element-subtitle">
+              Shinshu University, Japan
+            </h4>
+            <p>
+              {" "}
+              I majored in the Faculty of Law, the Code of Criminal Procedure in
+              Information Crime
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            iconStyle={{
+              background: "tan",
+              color: "#7e0f12",
+              boxShadow: "0 0 0 4px #7e0f12",
+            }}
+            icon={<BabyChangingStationIcon />}
+          />
+        </VerticalTimeline>
+      </Box>
+      <Footer />
+    </>
   );
 };
 
