@@ -4,40 +4,40 @@ import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import Typography from "@mui/material/Typography";
-import Drawer from "@mui/material/Drawer";
-import Avatar from "@mui/material/Avatar";
-import Divider from "@mui/material/Divider";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import HomeIcon from "@mui/icons-material/Home";
 import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import AppsIcon from "@mui/icons-material/Apps";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { red } from "@mui/material/colors";
+import { makeStyles } from "@material-ui/styles";
+import Container from "@mui/material/Container";
+import Menu from "@mui/material/Menu";
+import Button from "@mui/material/Button";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
 
-import avatar from "../images/avatar.jpg";
-import Footer from "../components/Footer";
-
+const pages = ["Resume", "Portfolio", "Contact"];
 const menuItems = [
-  { listIcon: <HomeIcon />, listText: "Home", listPath: "/" },
   { listIcon: <AssignmentIndIcon />, listText: "Resume", listPath: "/resume" },
   { listIcon: <AppsIcon />, listText: "Portfolio", listPath: "/portfolio" },
   { listIcon: <ContactMailIcon />, listText: "Contact", listPath: "/contact" },
 ];
 
+const useStyles = makeStyles({
+  menu: {
+    "& .MuiPaper-root": {
+      backgroundColor: "#b71a3b",
+    },
+  },
+});
+
 const theme = createTheme({
   palette: {
     primary: {
       main: "#fac57d",
-    },
-    secondary: {
-      main: red[800],
     },
   },
   typography: {
@@ -46,97 +46,155 @@ const theme = createTheme({
 });
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
+  const classes = useStyles();
+  const [anchorElNav, setAnchorElNav] = useState(null);
 
-  const sideList = () => (
-    <ThemeProvider theme={theme}>
-      <Box
-        component="div"
-        sx={{
-          width: 250,
-          background: "#b71a3b",
-          height: "100%",
-        }}
-      >
-        <Avatar
-          src={avatar}
-          alt="Yoshino"
-          sx={{
-            display: "block",
-            margin: "2rem auto",
-            width: 120,
-            height: 120,
-          }}
-        />
-        <Divider />
-        <List
-          sx={{
-            marginTop: "2rem",
-          }}
-        >
-          {menuItems.map((item, i) => (
-            <ListItem
-              button
-              key={i}
-              onClick={() => setOpen(false)}
-              component={Link}
-              to={item.listPath}
-              sx={{
-                color: "#fac57d",
-                margin: "0 2rem",
-              }}
-            >
-              <ListItemIcon
-                sx={{
-                  color: "#fac57d",
-                }}
-              >
-                {item.listIcon}
-              </ListItemIcon>
-              <ListItemText primary={item.listText} />
-            </ListItem>
-          ))}
-        </List>
-      </Box>
-    </ThemeProvider>
-  );
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <Box component="nav">
-          <AppBar
-            position="absolute"
-            color="primary"
-            sx={{
-              margin: 0,
-            }}
-          >
-            <Toolbar>
-              <IconButton onClick={() => setOpen(true)} size="large">
-                <KeyboardDoubleArrowLeftIcon color="secondary" />
-              </IconButton>
-              <Typography
-                className="link"
-                variant="h4"
-                color="#b71a3b"
-                component={Link}
-                to="/"
+    <ThemeProvider theme={theme}>
+      <AppBar
+        position="absolute"
+        color="primary"
+        sx={{
+          margin: 0,
+        }}
+      >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <Typography
+              variant="h4"
+              noWrap
+              sx={{
+                ml: 5,
+                display: { xs: "none", md: "flex", textDecoration: "none" },
+              }}
+              className="link"
+              color="#b71a3b"
+              component={Link}
+              to="/"
+            >
+              Portfolio
+            </Typography>
+
+            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+              <Button
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                sx={{ color: "#b71a3b" }}
+              >
+                <MenuBookIcon />
+              </Button>
+              <Menu
+                className={classes.menu}
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
                 sx={{
-                  textDecoration: "none",
+                  display: {
+                    xs: "block",
+                    md: "none",
+                  },
                 }}
               >
-                Portfolio
-              </Typography>
-            </Toolbar>
-          </AppBar>
-        </Box>
-        <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
-          {sideList()}
-          <Footer />
-        </Drawer>
-      </ThemeProvider>
-    </>
+                <List
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    background: "#b71a3b",
+                  }}
+                >
+                  {menuItems.map((item, i) => (
+                    <ListItem
+                      button
+                      key={i}
+                      component={Link}
+                      to={item.listPath}
+                      sx={{
+                        color: "#fac57d",
+                      }}
+                    >
+                      <ListItemIcon
+                        sx={{
+                          color: "#fac57d",
+                        }}
+                      >
+                        {item.listIcon}
+                      </ListItemIcon>
+                      <ListItemText
+                        primary={item.listText}
+                        sx={{ ml: "-18px" }}
+                      />
+                    </ListItem>
+                  ))}
+                </List>
+              </Menu>
+            </Box>
+            <Typography
+              variant="h4"
+              noWrap
+              className="link"
+              color="#b71a3b"
+              component={Link}
+              to="/"
+              sx={{
+                flexGrow: 1,
+                display: { xs: "flex", md: "none" },
+                textDecoration: "none",
+              }}
+            >
+              Portfolio
+            </Typography>
+            <Box
+              sx={{
+                ml: "50%",
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+              }}
+            >
+              {pages.map((page, i) => (
+                <Button
+                  key={i}
+                  onClick={handleCloseNavMenu}
+                  sx={{
+                    m: "1px 15px",
+                    color: "#b71a3b",
+                    display: "flex",
+                    fontSize: "26px",
+                    textTransform: "none",
+                    transition: ".3s",
+                    ":hover": {
+                      backgroundColor: "#b71a3b",
+                      color: "#fac57d",
+                    },
+                  }}
+                >
+                  {page}
+                </Button>
+              ))}
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </ThemeProvider>
   );
 };
 
