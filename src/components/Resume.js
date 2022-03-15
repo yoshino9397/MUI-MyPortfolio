@@ -62,7 +62,7 @@ const skills = [
   { icon: <SiExpress />, name: "Express.js" },
   { icon: <SiTypescript />, name: "Typescript" },
   { icon: <SiBootstrap />, name: "Bootstrap" },
-  { icon: <SiMaterialui />, name: "MUI" },
+  { icon: <SiMaterialui />, name: "Material UI" },
   { icon: <GrMysql />, name: "MySQL" },
   { icon: <SiMongodb />, name: "Mongodb" },
   { icon: <IoColorPalette />, name: "ClipStudio Paint" },
@@ -96,8 +96,9 @@ const Resume = () => {
                 <Card
                   sx={{
                     maxWidth: 110,
-                    maxHeight: 140,
+                    maxHeight: 130,
                     m: "1rem auto",
+                    p: "0 3px",
                     bgcolor: "#e2dac5",
                     boxShadow: "5px 10px 10px #4d0507",
                   }}

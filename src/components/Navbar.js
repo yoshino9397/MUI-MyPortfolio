@@ -116,7 +116,16 @@ const Navbar = () => {
               <IconButton onClick={() => setOpen(true)} size="large">
                 <KeyboardDoubleArrowLeftIcon color="secondary" />
               </IconButton>
-              <Typography variant="h4" color="#b71a3b">
+              <Typography
+                className="link"
+                variant="h4"
+                color="#b71a3b"
+                component={Link}
+                to="/"
+                sx={{
+                  textDecoration: "none",
+                }}
+              >
                 Portfolio
               </Typography>
             </Toolbar>
