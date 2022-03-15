@@ -19,7 +19,12 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 
-const pages = ["Resume", "Portfolio", "Contact"];
+// const pages = ["Resume", "Portfolio", "Contact"];
+const pages = [
+  { button: "Resume", path: "/resume" },
+  { button: "Portfplio", path: "/portfolio" },
+  { button: "Contact", path: "/contact" },
+];
 const menuItems = [
   { listIcon: <AssignmentIndIcon />, listText: "Resume", listPath: "/resume" },
   { listIcon: <AppsIcon />, listText: "Portfolio", listPath: "/portfolio" },
@@ -73,14 +78,18 @@ const Navbar = () => {
               noWrap
               sx={{
                 ml: 5,
-                display: { xs: "none", md: "flex", textDecoration: "none" },
+                display: {
+                  xs: "none",
+                  md: "flex",
+                  textDecoration: "none",
+                },
               }}
               className="link"
               color="#b71a3b"
               component={Link}
               to="/"
             >
-              Portfolio
+              My Portfolio
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -161,19 +170,21 @@ const Navbar = () => {
                 textDecoration: "none",
               }}
             >
-              Portfolio
+              My Portfolio
             </Typography>
             <Box
               sx={{
-                ml: "50%",
+                // ml: "50%",
                 flexGrow: 1,
-                display: { xs: "none", md: "flex" },
+                display: { xs: "none", md: "flex", justifyContent: "right" },
               }}
             >
               {pages.map((page, i) => (
                 <Button
                   key={i}
                   onClick={handleCloseNavMenu}
+                  component={Link}
+                  to={page.path}
                   sx={{
                     m: "1px 15px",
                     color: "#b71a3b",
@@ -187,7 +198,7 @@ const Navbar = () => {
                     },
                   }}
                 >
-                  {page}
+                  {page.button}
                 </Button>
               ))}
             </Box>

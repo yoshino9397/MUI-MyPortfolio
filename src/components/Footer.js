@@ -8,56 +8,72 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "@mui/material/Link";
 import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
 const theme = createTheme({});
 const Footer = () => {
   return (
     <ThemeProvider theme={theme}>
-      <BottomNavigation sx={{ bgcolor: "#313c33" }}>
-        <Link href="https://github.com/yoshino9397">
-          <BottomNavigationAction
-            icon={<GitHubIcon />}
-            sx={{
-              color: "#fac57d",
-              ":hover": {
-                color: "tomato",
-              },
-            }}
-          />
-        </Link>
-        <Link href="https://www.linkedin.com/in/yoshino-yayama-a79365218/">
-          <BottomNavigationAction
-            icon={<LinkedInIcon />}
-            sx={{
-              color: "#fac57d",
-              ":hover": {
-                color: "tomato",
-              },
-            }}
-          />
-        </Link>
-        <Link href="https://www.instagram.com/yoshinoyayama/">
-          <BottomNavigationAction
-            icon={<InstagramIcon />}
-            sx={{
-              color: "#fac57d",
-              ":hover": {
-                color: "tomato",
-              },
-            }}
-          />
-        </Link>
-      </BottomNavigation>
-      <Typography
-        variant="body2"
-        color="tan"
-        bgcolor="#313c33"
+      <Box
+        component="div"
         sx={{
-          p: "5px 0 10px 0",
+          display: "flex",
+          position: "absolute",
+          width: "100%",
+          justifyContent: "space-around",
         }}
       >
-        ©️yoshinoyayama
-      </Typography>
+        <BottomNavigation sx={{ bgcolor: "tan", width: "100%" }}>
+          <Link href="https://github.com/yoshino9397">
+            <BottomNavigationAction
+              icon={<GitHubIcon />}
+              sx={{
+                color: "#7e0f12",
+                ":hover": {
+                  color: "tomato",
+                },
+              }}
+            />
+          </Link>
+          <Link href="https://www.linkedin.com/in/yoshino-yayama-a79365218/">
+            <BottomNavigationAction
+              icon={<LinkedInIcon />}
+              sx={{
+                color: "#7e0f12",
+                ":hover": {
+                  color: "tomato",
+                },
+              }}
+            />
+          </Link>
+          <Link href="https://www.instagram.com/yoshinoyayama/">
+            <BottomNavigationAction
+              icon={<InstagramIcon />}
+              sx={{
+                color: "#7e0f12",
+                ":hover": {
+                  color: "tomato",
+                },
+              }}
+            />
+          </Link>
+        </BottomNavigation>
+        <Typography
+          variant="body2"
+          color="#7e0f12"
+          bgcolor="tan"
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            position: "absolute",
+            top: "55px",
+            pb: "10px"
+          }}
+        >
+          ©️yoshinoyayama
+        </Typography>
+      </Box>
     </ThemeProvider>
   );
 };

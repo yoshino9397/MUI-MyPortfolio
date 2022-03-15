@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer";
 import { makeStyles } from "@material-ui/styles";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
@@ -81,90 +82,103 @@ const useStyles = makeStyles({
 const Portfolio = () => {
   const classes = useStyles();
   return (
-    <Box component="div" className={classes.mainContainer}>
-      <Grid
-        container
-        justifyContent="center"
-        sx={{
-          mt: "3rem",
-        }}
-      >
-        {projects.map((project, i) => (
-          <Grid item xs={12} sm={8} md={4} key={i}>
-            <Card
-              sx={{
-                maxWidth: 345,
-                m: "3rem auto",
-                bgcolor: "#e2dac5",
-                boxShadow: "5px 10px 15px #1d261e",
-              }}
-            >
-              <CardActionArea>
-                <Link href={project.url}>
-                  <CardMedia
-                    component="img"
-                    alt="Project"
-                    height="140"
-                    image={project.image}
-                    sx={{
-                      ":hover": {
-                        transform: "scale(0.9)",
-                      },
-                    }}
-                  />
-                </Link>
-                <CardContent>
-                  <Typography
-                    variant="h5"
-                    color="#b71a3b"
-                    gutterBottom
-                    sx={{ textAlign: "center" }}
+    <>
+      <Box component="div" className={classes.mainContainer}>
+        <Grid
+          container
+          justifyContent="center"
+          sx={{
+            mt: "3rem",
+          }}
+        >
+          {projects.map((project, i) => (
+            <Grid item xs={12} sm={8} md={4} key={i}>
+              <Card
+                sx={{
+                  maxWidth: 345,
+                  m: "3rem auto",
+                  bgcolor: "#e2dac5",
+                  boxShadow: "5px 10px 15px #1d261e",
+                }}
+              >
+                <CardActionArea>
+                  <Link href={project.url}>
+                    <CardMedia
+                      component="img"
+                      alt="Project"
+                      height="140"
+                      image={project.image}
+                      sx={{
+                        ":hover": {
+                          transform: "scale(0.9)",
+                        },
+                      }}
+                    />
+                  </Link>
+                  <CardContent>
+                    <Typography
+                      variant="h5"
+                      color="#b71a3b"
+                      gutterBottom
+                      sx={{ textAlign: "center" }}
+                    >
+                      {project.name}
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary">
+                      {project.description}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <Link
+                    href={project.code}
+                    underline="none"
+                    target="_blank"
+                    rel="noopener"
                   >
-                    {project.name}
-                  </Typography>
-                  <Typography variant="body2" color="textSecondary">
-                    {project.description}
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-              <CardActions>
-                <Link href={project.code} underline="none">
-                  <Button
-                    size="small"
-                    sx={{
-                      color: "#cb401b",
-                      fontWeight: "bold",
-                      transition: ".2s",
-                      ":hover": {
-                        fontSize: "11px",
-                      },
-                    }}
-                  >
-                    Code
-                  </Button>
-                </Link>
+                    <Button
+                      size="small"
+                      sx={{
+                        color: "#cb401b",
+                        fontWeight: "bold",
+                        transition: ".2s",
+                        ":hover": {
+                          fontSize: "11px",
+                        },
+                      }}
+                    >
+                      Code
+                    </Button>
+                  </Link>
 
-                <Link href={project.url} underline="none">
-                  <Button
-                    size="small"
-                    sx={{
-                      color: "#cb401b",
-                      fontWeight: "bold",
-                      transition: ".2s",
-                      ":hover": {
-                        fontSize: "11px",
-                      },
-                    }}
+                  <Link
+                    href={project.url}
+                    underline="none"
+                    target="_blank"
+                    rel="noopener"
                   >
-                    Demo
-                  </Button>
-                </Link>
-              </CardActions>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+                    <Button
+                      size="small"
+                      sx={{
+                        color: "#cb401b",
+                        fontWeight: "bold",
+                        transition: ".2s",
+                        ":hover": {
+                          fontSize: "11px",
+                        },
+                      }}
+                    >
+                      Demo
+                    </Button>
+                  </Link>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
+      <Footer />
+    </>
   );
 };
 
