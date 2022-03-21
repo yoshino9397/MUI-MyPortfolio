@@ -77,7 +77,7 @@ const Contact = () => {
               >
                 {" "}
                 <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
-                  17j2079g@shinshu-u.ac.jp
+                  yayamayoshino@gmail.com
                 </Box>
               </Link>
             </Typography>{" "}
