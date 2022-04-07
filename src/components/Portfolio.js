@@ -16,8 +16,8 @@ import project1 from "../images/whereareyou.png";
 import project2 from "../images/phantom.png";
 import project3 from "../images/musician.png";
 import project4 from "../images/muifolio.png";
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import project5 from "../images/ecommerce.png";
+import project6 from "../images/social.png";
 
 const projects = [
   {
@@ -44,31 +44,41 @@ const projects = [
     code: "https://github.com/yoshino9397/Ysinger",
   },
   {
-    name: "MUI Portfolio",
+    name: "Material-UI Portfolio",
     description: `I have developed a simple but dynamic React project, mainly using React and Material UI.Created Responsive User Experience with MUI Grids that allows the user to view any of my works which are organized.`,
     image: project4,
     url: "https://yoshino-mui-portfolio.netlify.app/",
     code: "https://github.com/yoshino9397/MUI-MyPortfolio",
   },
   {
-    name: "React Project",
+    name: "Social Media App",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project5,
-    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
-    code: "https://github.com/yoshino9397/MUI-MyPortfolio",
+    url: "https://yoshino-social.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Mern-SocialApp-Final",
   },
   {
-    name: "E-commerce",
+    name: "E-commerce App",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project6,
-    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
-    code: "https://github.com/yoshino9397/MUI-MyPortfolio",
+    url: "https://deployretry.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
+  },
+  {
+    name: "Travel-Map App",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+    consequatur magni quod nesciunt necessitatibus molestiae non\
+    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    iste alias sunt veritatis nisi dolores!`,
+    image: project6,
+    url: "https://deployretry.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
   },
 ];
 
@@ -102,7 +112,7 @@ const Portfolio = () => {
                 }}
               >
                 <CardActionArea>
-                  <Link href={project.url}>
+                  <Link href={project.url} target="_blank">
                     <CardMedia
                       component="img"
                       alt="Project"
