@@ -78,7 +78,7 @@ const projects = [
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project7,
-    url: "https://deployretry.herokuapp.com/",
+    url: "https://yoshino-travelmap.herokuapp.com/",
     code: "https://github.com/yoshino9397/Mern-TravelApp",
   },
 ];

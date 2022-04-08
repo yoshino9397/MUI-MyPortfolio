@@ -74,6 +74,7 @@ const Contact = () => {
                 href="mailto:17j2079g@shinshu-u.ac.jp"
                 underline="none"
                 color="tomato"
+                target="_blank"
               >
                 {" "}
                 <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
@@ -94,6 +95,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/yoshino-yayama-a79365218/"
                 underline="none"
                 color="tomato"
+                target="_blank"
               >
                 <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
                   Yoshino Yayama
@@ -113,6 +115,7 @@ const Contact = () => {
                 href="https://github.com/yoshino9397"
                 underline="none"
                 color="tomato"
+                target="_blank"
               >
                 {" "}
                 <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
