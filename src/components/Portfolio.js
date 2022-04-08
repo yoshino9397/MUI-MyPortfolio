@@ -16,9 +16,10 @@ import project1 from "../images/whereareyou.png";
 import project2 from "../images/phantom.png";
 import project3 from "../images/musician.png";
 import project4 from "../images/muifolio.png";
-import project5 from "../images/social.png";
-import project6 from "../images/ecommerce.png";
-import project7 from "../images/travel.png";
+import project5 from "../images/travel.png";
+import project6 from "../images/weather.png";
+import project7 from "../images/social.png";
+import project8 from "../images/ecommerce.png";
 
 const projects = [
   {
@@ -52,12 +53,32 @@ const projects = [
     code: "https://github.com/yoshino9397/MUI-MyPortfolio",
   },
   {
-    name: "Social Media App",
+    name: "Travel-Map App",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project5,
+    url: "https://yoshino-travelmap.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Mern-TravelApp",
+  },
+  {
+    name: "Weather App",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+    consequatur magni quod nesciunt necessitatibus molestiae non\
+    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    iste alias sunt veritatis nisi dolores!`,
+    image: project6,
+    url: "https://yoshino-react-weather-app.netlify.app/",
+    code: "https://github.com/yoshino9397/React-weatherApp",
+  },
+  {
+    name: "Social Media App",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+    consequatur magni quod nesciunt necessitatibus molestiae non\
+    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    iste alias sunt veritatis nisi dolores!`,
+    image: project7,
     url: "https://yoshino-chatapp.herokuapp.com/",
     code: "https://github.com/yoshino9397/Realtime-ChatApp",
   },
@@ -67,19 +88,9 @@ const projects = [
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
-    image: project6,
+    image: project8,
     url: "https://deployretry.herokuapp.com/",
     code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
-  },
-  {
-    name: "Travel-Map App",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project7,
-    url: "https://yoshino-travelmap.herokuapp.com/",
-    code: "https://github.com/yoshino9397/Mern-TravelApp",
   },
 ];
 
