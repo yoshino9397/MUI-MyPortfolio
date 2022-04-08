@@ -16,8 +16,9 @@ import project1 from "../images/whereareyou.png";
 import project2 from "../images/phantom.png";
 import project3 from "../images/musician.png";
 import project4 from "../images/muifolio.png";
-import project5 from "../images/ecommerce.png";
-import project6 from "../images/social.png";
+import project5 from "../images/social.png";
+import project6 from "../images/ecommerce.png";
+import project7 from "../images/travel.png";
 
 const projects = [
   {
@@ -76,9 +77,9 @@ const projects = [
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
-    image: project6,
+    image: project7,
     url: "https://deployretry.herokuapp.com/",
-    code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
+    code: "https://github.com/yoshino9397/Mern-TravelApp",
   },
 ];
 

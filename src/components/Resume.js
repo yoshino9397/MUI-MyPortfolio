@@ -19,19 +19,24 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
-import { IoLogoHtml5 } from "react-icons/io5";
-import { IoLogoCss3 } from "react-icons/io5";
-import { IoLogoSass } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiReact } from "react-icons/si";
-import { IoLogoNodejs } from "react-icons/io5";
-import { SiExpress } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si";
-import { SiMaterialui } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
-import { SiMongodb } from "react-icons/si";
-import { IoColorPalette } from "react-icons/io5";
+import {
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoSass,
+  IoLogoJavascript,
+  IoLogoNodejs,
+  IoColorPalette,
+} from "react-icons/io5";
+import {
+  SiReact,
+  SiExpress,
+  SiSocketdotio,
+  SiTypescript,
+  SiBootstrap,
+  SiMaterialui,
+  SiMongodb,
+} from "react-icons/si";
 
 const theme = createTheme({
   typography: {
@@ -62,6 +67,7 @@ const skills = [
   { icon: <IoLogoNodejs />, name: "Node" },
   { icon: <SiExpress />, name: "Express.js" },
   { icon: <SiTypescript />, name: "Typescript" },
+  { icon: <SiSocketdotio />, name: "Socket" },
   { icon: <SiBootstrap />, name: "Bootstrap" },
   { icon: <SiMaterialui />, name: "Material UI" },
   { icon: <GrMysql />, name: "MySQL" },
