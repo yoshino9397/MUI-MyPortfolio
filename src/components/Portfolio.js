@@ -58,8 +58,8 @@ const projects = [
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
     image: project5,
-    url: "https://yoshino-social.herokuapp.com/",
-    code: "https://github.com/yoshino9397/Mern-SocialApp-Final",
+    url: "https://yoshino-chatapp.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Realtime-ChatApp",
   },
   {
     name: "E-commerce App",
