@@ -22,7 +22,7 @@ import ListItemText from "@mui/material/ListItemText";
 // const pages = ["Resume", "Portfolio", "Contact"];
 const pages = [
   { button: "Resume", path: "/resume" },
-  { button: "Portfplio", path: "/portfolio" },
+  { button: "Portfolio", path: "/portfolio" },
   { button: "Contact", path: "/contact" },
 ];
 const menuItems = [
