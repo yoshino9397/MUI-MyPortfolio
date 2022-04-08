@@ -24,7 +24,7 @@ const Footer = () => {
         }}
       >
         <BottomNavigation sx={{ bgcolor: "tan", width: "100%" }}>
-          <Link href="https://github.com/yoshino9397">
+          <Link href="https://github.com/yoshino9397" target="_blank">
             <BottomNavigationAction
               icon={<GitHubIcon />}
               sx={{
@@ -35,7 +35,7 @@ const Footer = () => {
               }}
             />
           </Link>
-          <Link href="https://www.linkedin.com/in/yoshino-yayama-a79365218/">
+          <Link href="https://www.linkedin.com/in/yoshino-yayama-a79365218/" target="_blank">
             <BottomNavigationAction
               icon={<LinkedInIcon />}
               sx={{
@@ -46,7 +46,7 @@ const Footer = () => {
               }}
             />
           </Link>
-          <Link href="https://www.instagram.com/yoshinoyayama/">
+          <Link href="https://www.instagram.com/yoshinoyayama/" target="_blank">
             <BottomNavigationAction
               icon={<InstagramIcon />}
               sx={{
