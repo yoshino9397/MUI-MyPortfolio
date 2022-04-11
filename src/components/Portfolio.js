@@ -31,8 +31,7 @@ const projects = [
   },
   {
     name: "Mystery Game Website",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
-    consequatur magni quod nesciunt necessitatibus molestiae non eligendi, magnam est aliquam recusandae? Magnam soluta minu iste alias sunt veritatis nisi dolores!eligendi, magnam est `,
+    description: `Now Updating.....`,
     image: project2,
     url: "https://yoshino9397.github.io/TrainProject/HTML/enter.html",
     code: "https://github.com/yoshino9397/TrainProject",
