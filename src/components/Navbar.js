@@ -19,15 +19,14 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 
-// const pages = ["Resume", "Portfolio", "Contact"];
 const pages = [
   { button: "Resume", path: "/resume" },
-  { button: "Portfolio", path: "/portfolio" },
+  { button: "Projects", path: "/project" },
   { button: "Contact", path: "/contact" },
 ];
 const menuItems = [
   { listIcon: <AssignmentIndIcon />, listText: "Resume", listPath: "/resume" },
-  { listIcon: <AppsIcon />, listText: "Portfolio", listPath: "/portfolio" },
+  { listIcon: <AppsIcon />, listText: "Projects", listPath: "/project" },
   { listIcon: <ContactMailIcon />, listText: "Contact", listPath: "/contact" },
 ];
 
@@ -174,7 +173,6 @@ const Navbar = () => {
             </Typography>
             <Box
               sx={{
-                // ml: "50%",
                 flexGrow: 1,
                 display: { xs: "none", md: "flex", justifyContent: "right" },
               }}

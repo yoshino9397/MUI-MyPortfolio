@@ -23,11 +23,31 @@ import project8 from "../images/ecommerce.png";
 
 const projects = [
   {
-    name: "Horror Game Website",
-    description: `Developed front-end user experience using HTML,SASS,Javascript and prepared some gimmicks so that users can experience the world view of the game from the site as well.Designed all the pictures on the site and drew them in Clip Studio.`,
-    image: project1,
-    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
-    code: "https://github.com/yoshino9397/whrereAreYou",
+    name: "Material-UI Portfolio",
+    description: `I have developed a simple but dynamic React project, mainly using React and Material UI.Created Responsive User Experience with MUI Grids that allows the user to view any of my works which are organized.`,
+    image: project4,
+    url: "https://yoshino-mui-portfolio.netlify.app/",
+    code: "https://github.com/yoshino9397/MUI-MyPortfolio",
+  },
+  {
+    name: "Social Media App",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+    consequatur magni quod nesciunt necessitatibus molestiae non\
+    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    iste alias sunt veritatis nisi dolores!`,
+    image: project7,
+    url: "https://yoshino-chatapp.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Realtime-ChatApp",
+  },
+  {
+    name: "E-commerce App",
+    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+    consequatur magni quod nesciunt necessitatibus molestiae non\
+    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
+    iste alias sunt veritatis nisi dolores!`,
+    image: project8,
+    url: "https://deployretry.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
   },
   {
     name: "Mystery Game Website",
@@ -35,21 +55,6 @@ const projects = [
     image: project2,
     url: "https://yoshino9397.github.io/TrainProject/HTML/enter.html",
     code: "https://github.com/yoshino9397/TrainProject",
-  },
-  {
-    name: "Musician website",
-    description: `Developed with a focus on HTML, CSS, and Javascript, with easy-to-read and artist-like creative design in mind.Responsive design, changing the menu bar display on PC and smartphone, and creating website layout / user interface.
-    `,
-    image: project3,
-    url: "https://yoshino9397.github.io/Ysinger/HTML/web.html",
-    code: "https://github.com/yoshino9397/Ysinger",
-  },
-  {
-    name: "Material-UI Portfolio",
-    description: `I have developed a simple but dynamic React project, mainly using React and Material UI.Created Responsive User Experience with MUI Grids that allows the user to view any of my works which are organized.`,
-    image: project4,
-    url: "https://yoshino-mui-portfolio.netlify.app/",
-    code: "https://github.com/yoshino9397/MUI-MyPortfolio",
   },
   {
     name: "Travel-Map App",
@@ -72,24 +77,20 @@ const projects = [
     code: "https://github.com/yoshino9397/React-weatherApp",
   },
   {
-    name: "Social Media App",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project7,
-    url: "https://yoshino-chatapp.herokuapp.com/",
-    code: "https://github.com/yoshino9397/Realtime-ChatApp",
+    name: "Horror Game Website",
+    description: `Developed front-end user experience using HTML,SASS,Javascript and prepared some gimmicks so that users can experience the world view of the game from the site as well.Designed all the pictures on the site and drew them in Clip Studio.`,
+    image: project1,
+    url: "https://yoshino9397.github.io/whrereAreYou/HTML/top.html",
+    code: "https://github.com/yoshino9397/whrereAreYou",
   },
+
   {
-    name: "E-commerce App",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
-    image: project8,
-    url: "https://deployretry.herokuapp.com/",
-    code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
+    name: "Musician website",
+    description: `Developed with a focus on HTML, CSS, and Javascript, with easy-to-read and artist-like creative design in mind.Responsive design, changing the menu bar display on PC and smartphone, and creating website layout / user interface.
+    `,
+    image: project3,
+    url: "https://yoshino9397.github.io/Ysinger/HTML/web.html",
+    code: "https://github.com/yoshino9397/Ysinger",
   },
 ];
 
@@ -100,7 +101,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Portfolio = () => {
+const Project = () => {
   const classes = useStyles();
   return (
     <>
@@ -117,6 +118,7 @@ const Portfolio = () => {
               <Card
                 sx={{
                   maxWidth: 345,
+                  height: 375,
                   m: "3rem auto",
                   bgcolor: "#e2dac5",
                   boxShadow: "5px 10px 15px #1d261e",
@@ -203,4 +205,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Project;

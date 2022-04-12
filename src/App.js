@@ -5,7 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Home from "./components";
 import Resume from "./components/Resume";
 import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
+import Project from "./components/Project";
 import Contact from "./components/Contact";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/project" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </React.Fragment>
