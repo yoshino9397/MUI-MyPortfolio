@@ -86,7 +86,11 @@ const Resume = () => {
               variant="h4"
               align="center"
               className={classes.heading}
-              sx={{ mt: "4rem", fontSize: "3.5rem", color: "tan" }}
+              sx={{
+                mt: { xs: "3rem", sm: "4rem", md: "4rem" },
+                fontSize: "3.5rem",
+                color: "tan",
+              }}
             >
               My Skills
             </Typography>
@@ -176,9 +180,9 @@ const Resume = () => {
               Nagano, Japan
             </h4>
             <p>
-              While working as a front-end engineer as an internship, I attended
-              company code study sessions and had employees taught me in a
-              coworking space.
+              While working as a front-end engineer intern, I attended company
+              code study sessions and had employees teach me in a coworking
+              space.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -212,7 +216,6 @@ const Resume = () => {
               Shinshu University, Japan
             </h4>
             <p>
-              {" "}
               I majored in the Faculty of Law, the Code of Criminal Procedure in
               Information Crime
             </p>
