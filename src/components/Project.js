@@ -12,7 +12,6 @@ import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 
-
 const projects = [
   {
     name: "Material-UI Portfolio",
@@ -23,47 +22,35 @@ const projects = [
   },
   {
     name: "Social Media App",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `This app is a social app with a chat function. It was built with MongoDB, express.js, node.js, react (MERN), and the real-time chat function was equipped using Socket.IO. You can follow posts with images and other users.`,
     image: "https://live.staticflickr.com/65535/52005056131_056d40957c_k.jpg",
     url: "https://yoshino-chatapp.herokuapp.com/",
     code: "https://github.com/yoshino9397/Realtime-ChatApp",
   },
   {
     name: "E-commerce App",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `This app is my second MERN app. On the server-side, the password is encrypted with CryptoJS, the access token can be obtained with JWT, and redux defines the handling of users and items in the cart. I used Stripe for payment by credit card.`,
     image: "https://live.staticflickr.com/65535/52005120993_0969c57259_k.jpg",
     url: "https://deployretry.herokuapp.com/",
     code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
   },
   {
     name: "Mystery Game Website",
-    description: `Now Updating.....`,
+    description: `I built a Japanese-style mystery game site mainly with material UI and React, and focused on the design of details so that the worldview of the game can be easily conveyed to users. All the illustrations and backgrounds on the site were drawn by me using Clip Studio`,
     image: "https://live.staticflickr.com/65535/52005121363_b9636ad538_k.jpg",
     url: "https://yoshino-mysterygame.netlify.app/",
     code: "https://github.com/yoshino9397/MysteryGame-Page",
   },
   {
     name: "Travel-Map App",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `The MERN map app for travel lovers who can pin their favorite places and memories on a simple map. Mapbox is used as the API, and the design is also original. On the server-side, it's built so that hash passwords can be generated using bcrypt.`,
     image: "https://live.staticflickr.com/65535/52005056001_cacd2bb2eb_k.jpg",
     url: "https://yoshino-travelmap.herokuapp.com/",
     code: "https://github.com/yoshino9397/Mern-TravelApp",
   },
   {
     name: "Weather App",
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi, magnam est aliquam recusandae? Magnam soluta minus\
-    iste alias sunt veritatis nisi dolores!`,
+    description: `It is a weather app that uses Mapbox and OpenWeatherMap as APIs. The background changes depending on the current time, and you can search for the place name for which you want to display information.`,
     image: "https://live.staticflickr.com/65535/52005584140_ab279e7c4e_k.jpg",
     url: "https://yoshino-react-weather-app.netlify.app/",
     code: "https://github.com/yoshino9397/React-weatherApp",
@@ -110,7 +97,7 @@ const Project = () => {
               <Card
                 sx={{
                   maxWidth: 345,
-                  height: 375,
+                  height: 385,
                   m: "3rem auto",
                   bgcolor: "#e2dac5",
                   boxShadow: "5px 10px 15px #1d261e",
