@@ -42,6 +42,20 @@ const projects = [
     code: "https://github.com/yoshino9397/MysteryGame-Page",
   },
   {
+    name: "Cafe Order App",
+    description: `Mainly used Next.js and React-paypal-js as payment method, also used Redux, Cloudinary.Created Responsive User Experience with Grids to see an organized cafe menu We developed a stylish cafe ordering app. New menus can be added from the admin panel.`,
+    image: "https://live.staticflickr.com/65535/52041459474_337371e876_k.jpg",
+    url: "https://yoshino-chatapp.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Realtime-ChatApp",
+  },
+  {
+    name: "Hotel Booking App",
+    description: `This booking application was designed based on the design and structure of Booking.com, and was designed to allow users to search for hotels that meet their requirements by region, date, and number of people.`,
+    image: "https://live.staticflickr.com/65535/52040166147_e698d3aea0_k.jpg",
+    url: "https://deployretry.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
+  },
+  {
     name: "Travel-Map App",
     description: `The MERN map app for travel lovers who can pin their favorite places and memories on a simple map. Mapbox is used as the API, and the design is also original. On the server-side, it's built so that hash passwords can be generated using bcrypt.`,
     image: "https://live.staticflickr.com/65535/52005056001_cacd2bb2eb_k.jpg",
