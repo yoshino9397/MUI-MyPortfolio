@@ -45,8 +45,8 @@ const projects = [
     name: "Cafe Order App",
     description: `Mainly used Next.js and React-paypal-js as payment method, also used Redux, Cloudinary.Created Responsive User Experience with Grids to see an organized cafe menu We developed a stylish cafe ordering app. New menus can be added from the admin panel.`,
     image: "https://live.staticflickr.com/65535/52041459474_337371e876_k.jpg",
-    url: "https://yoshino-chatapp.herokuapp.com/",
-    code: "https://github.com/yoshino9397/Realtime-ChatApp",
+    url: "https://cafe-order-app.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Cafe-Order-Deploy",
   },
   {
     name: "Hotel Booking App",
