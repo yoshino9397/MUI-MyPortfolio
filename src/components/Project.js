@@ -50,10 +50,10 @@ const projects = [
   },
   {
     name: "Hotel Booking App",
-    description: `This booking application was designed based on the design and structure of Booking.com, and was designed to allow users to search for hotels that meet their requirements by region, date, and number of people.`,
+    description: `The booking application is designed to allow users to search for hotels that match their criteria by region, date and number of people, with reference to the design and structure of Booking.com. You can access the admin page from the username displayed after logging in.`,
     image: "https://live.staticflickr.com/65535/52040166147_e698d3aea0_k.jpg",
-    url: "https://deployretry.herokuapp.com/",
-    code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
+    url: "https://yoshino-booking.herokuapp.com/",
+    code: "https://github.com/yoshino9397/Booking-App",
   },
   {
     name: "Travel-Map App",
