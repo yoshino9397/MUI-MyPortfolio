@@ -22,14 +22,14 @@ const projects = [
   },
   {
     name: "Social Media App",
-    description: `This app is a social app with a chat function. It was built with MongoDB, express.js, node.js, react (MERN), and the real-time chat function was equipped using Socket.IO. You can follow posts with images and other users.`,
+    description: `This app is a social app with a chat function. It was built with MongoDB, express.js, node.js, React (MERN), and You can use the real-time chat function was equipped using SocketIO. You can follow posts with images and other users.`,
     image: "https://live.staticflickr.com/65535/52005056131_056d40957c_k.jpg",
     url: "https://yoshino-chatapp.herokuapp.com/",
     code: "https://github.com/yoshino9397/Realtime-ChatApp",
   },
   {
     name: "E-commerce App",
-    description: `This app is my second MERN app. On the server-side, the password is encrypted with CryptoJS, the access token can be obtained with JWT, and redux defines the handling of users and items in the cart. I used Stripe for payment by credit card.`,
+    description: `The MERN app, which uses Redux, defines the handling of users and items in the cart. Stripe is also used for credit card payments.On the server-side, the password is encrypted with CryptoJS, the access token can be obtained with JWT.`,
     image: "https://live.staticflickr.com/65535/52005120993_0969c57259_k.jpg",
     url: "https://deployretry.herokuapp.com/",
     code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
