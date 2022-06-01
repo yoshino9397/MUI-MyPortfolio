@@ -9,6 +9,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Link from "@mui/material/Link";
+import resume from "../images/Yoshino-Resume.pdf";
 
 const useStyles = makeStyles((theme) => ({
   contactContainer: {
@@ -120,6 +121,23 @@ const Contact = () => {
                 {" "}
                 <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
                   yoshino9397
+                </Box>
+              </Link>
+            </Typography>
+            <Typography
+              variant="h5"
+              className={classes.contacts}
+              sx={{ mb: "1.5rem" }}
+            >
+              <Link
+                href={resume}
+                underline="none"
+                color="tomato"
+                target="_blank"
+              >
+                {" "}
+                <Box component="span" sx={{ color: "tomato", ml: "1rem" }}>
+                  My Resume
                 </Box>
               </Link>
             </Typography>
