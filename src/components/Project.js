@@ -21,6 +21,13 @@ const projects = [
     code: "https://github.com/yoshino9397/MUI-MyPortfolio",
   },
   {
+    name: "Time tracking App",
+    description: `This app is a time tracking app with Pomodoro technique . It was built with MongoDB, express.js, node.js, React (MERN), and You can also manage tasks divided by project and check the percentage of time spent on activities and tasks using a timer`,
+    image: "https://live.staticflickr.com/65535/52005056131_056d40957c_k.jpg",
+    url: "https://calm-journey-01741.herokuapp.com/",
+    code: "https://github.com/yoshino9397/TimeTracker-App",
+  },
+  {
     name: "Social Media App",
     description: `This app is a social app with a chat function. It was built with MongoDB, express.js, node.js, React (MERN), and You can use the real-time chat function was equipped using SocketIO. You can follow posts with images and other users.`,
     image: "https://live.staticflickr.com/65535/52005056131_056d40957c_k.jpg",
