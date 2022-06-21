@@ -22,7 +22,7 @@ const projects = [
   },
   {
     name: "Time tracking App",
-    description: `Time tracking app with Pomodoro Technique based on Toggle, co-developed with a friend.You can manage tasks divided by project and check the percentage of time spent on activities and tasks using a timer, output reports on activity history in PDF or CSV.`,
+    description: `Time tracking app with Pomodoro technique based on Toggle, co-developed with a friend.You can manage tasks divided by project and check the percentage of time spent on activities and tasks using a timer, output reports on activity history in CSV.`,
     image: "https://live.staticflickr.com/65535/52159615766_9eedbebb83_k.jpg",
     url: "https://calm-journey-01741.herokuapp.com/",
     code: "https://github.com/yoshino9397/TimeTracker-App",
