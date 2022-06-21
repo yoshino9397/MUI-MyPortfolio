@@ -22,7 +22,7 @@ const projects = [
   },
   {
     name: "Time tracking App",
-    description: `This MERN app is a time tracking app with Pomodoro technique is based on Toggle.You can manage tasks divided by project and check the percentage of time spent on activities and tasks using a timer, output reports on activity history in PDF or CSV.`,
+    description: `Time tracking app with Pomodoro Technique based on Toggle, co-developed with a friend.You can manage tasks divided by project and check the percentage of time spent on activities and tasks using a timer, output reports on activity history in PDF or CSV.`,
     image: "https://live.staticflickr.com/65535/52159615766_9eedbebb83_k.jpg",
     url: "https://calm-journey-01741.herokuapp.com/",
     code: "https://github.com/yoshino9397/TimeTracker-App",
@@ -138,7 +138,7 @@ const Project = () => {
                       }}
                     />
                   </Link>
-                  <CardContent>
+                  <CardContent  sx={{ minHeight: "190px" }}>
                     <Typography
                       variant="h5"
                       color="#b71a3b"
@@ -152,7 +152,7 @@ const Project = () => {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions>
+                <CardActions >
                   <Link
                     href={project.code}
                     underline="none"
