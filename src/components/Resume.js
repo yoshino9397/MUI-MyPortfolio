@@ -36,6 +36,8 @@ import {
   SiBootstrap,
   SiMaterialui,
   SiMongodb,
+  SiTailwindcss,
+  SiFirebase,
 } from "react-icons/si";
 
 const theme = createTheme({
@@ -70,8 +72,10 @@ const skills = [
   { icon: <SiSocketdotio />, name: "Socket" },
   { icon: <SiBootstrap />, name: "Bootstrap" },
   { icon: <SiMaterialui />, name: "Material UI" },
+  { icon: <SiTailwindcss />, name: "Tailwind CSS" },
   { icon: <GrMysql />, name: "MySQL" },
   { icon: <SiMongodb />, name: "Mongodb" },
+  { icon: <SiFirebase />, name: "Firebase" },
   { icon: <IoColorPalette />, name: "ClipStudio Paint" },
 ];
 
@@ -103,7 +107,7 @@ const Resume = () => {
                   md={2}
                   lg={1}
                   key={i}
-                  sx={{ m: "0 2rem" }}
+                  sx={{ m: "0 1.5rem" }}
                 >
                   <Card
                     sx={{
