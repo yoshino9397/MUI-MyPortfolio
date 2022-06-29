@@ -165,13 +165,14 @@ const Resume = () => {
             iconStyle={{ background: "#7e0f12", color: "tan" }}
             icon={<SchoolIcon />}
           >
-            <h1 className="vertical-timeline-element-title">CICCC Student</h1>
+            <h1 className="vertical-timeline-element-title">CICCC College</h1>
             <h4 className="vertical-timeline-element-subtitle">
               Vancouver, BC
             </h4>
             <p>
-              I have been studying to become a web developer, about front-end
-              languages, Java, PYTHON, etc.
+              Now I 'm a frontend developer with a wide range of academic
+              backgrounds, a passion for user experience and interaction design,
+              and strong creative and strategic thinking.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -184,9 +185,8 @@ const Resume = () => {
               Nagano, Japan
             </h4>
             <p>
-              While working as a front-end engineer intern, I attended company
-              code study sessions and had employees teach me in a coworking
-              space.
+              I mainly worked on website production, and I also did planning and
+              management of coworking spaces, events, and programming schools.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
