@@ -114,7 +114,7 @@ const Project = () => {
           }}
         >
           {projects.map((project, i) => (
-            <Grid item xs={12} sm={8} md={4} key={i}>
+            <Grid item sm={8} md={6} lg={4} key={i}>
               <Card
                 sx={{
                   maxWidth: 345,
@@ -138,7 +138,7 @@ const Project = () => {
                       }}
                     />
                   </Link>
-                  <CardContent  sx={{ minHeight: "190px" }}>
+                  <CardContent sx={{ minHeight: "190px" }}>
                     <Typography
                       variant="h5"
                       color="#b71a3b"
@@ -152,7 +152,7 @@ const Project = () => {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActions >
+                <CardActions>
                   <Link
                     href={project.code}
                     underline="none"
