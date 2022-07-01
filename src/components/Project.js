@@ -77,6 +77,13 @@ const projects = [
     code: "https://github.com/yoshino9397/React-weatherApp",
   },
   {
+    name: "Tailwind Portfolio",
+    description: `I have developed a simple freelance developer portfolio with TailwindCSS. Created Responsive design and dark mode(Night mode) as well. The site was developed using eye-friendly colors and a single-page structure for easy access to information.`,
+    image: "https://live.staticflickr.com/65535/52187500164_09adcd5e6b_k.jpg",
+    url: "https://yoshino9397.github.io/Tailwind-portfolio/",
+    code: "https://github.com/yoshino9397/Tailwind-portfolio",
+  },
+  {
     name: "Horror Game Website",
     description: `Developed front-end user experience using HTML,SASS,Javascript and prepared some gimmicks so that users can experience the world view of the game from the site as well.Designed all the pictures on the site and drew them in Clip Studio.`,
     image: "https://live.staticflickr.com/65535/52005055841_ed8e5e2f56_k.jpg",
