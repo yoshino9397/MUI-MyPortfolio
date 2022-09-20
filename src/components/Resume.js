@@ -38,6 +38,7 @@ import {
   SiMongodb,
   SiTailwindcss,
   SiFirebase,
+  SiGraphql
 } from "react-icons/si";
 
 const theme = createTheme({
@@ -66,9 +67,9 @@ const skills = [
   { icon: <IoLogoSass />, name: "SASS" },
   { icon: <IoLogoJavascript />, name: "JS" },
   { icon: <SiReact />, name: "React" },
+  { icon: <SiTypescript />, name: "Typescript" },
   { icon: <IoLogoNodejs />, name: "Node" },
   { icon: <SiExpress />, name: "Express.js" },
-  { icon: <SiTypescript />, name: "Typescript" },
   { icon: <SiSocketdotio />, name: "Socket" },
   { icon: <SiBootstrap />, name: "Bootstrap" },
   { icon: <SiMaterialui />, name: "Material UI" },
@@ -76,6 +77,7 @@ const skills = [
   { icon: <GrMysql />, name: "MySQL" },
   { icon: <SiMongodb />, name: "Mongodb" },
   { icon: <SiFirebase />, name: "Firebase" },
+  { icon: <SiGraphql />, name: "GraphQL" },
   { icon: <IoColorPalette />, name: "ClipStudio Paint" },
 ];
 
@@ -107,7 +109,7 @@ const Resume = () => {
                   md={2}
                   lg={1}
                   key={i}
-                  sx={{ m: "0 1.5rem" }}
+                  sx={{ m: "0 1rem" }}
                 >
                   <Card
                     sx={{
