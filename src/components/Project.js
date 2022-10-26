@@ -36,7 +36,7 @@ const projects = [
   },
   {
     name: "E-commerce App",
-    description: `The MERN app, which uses Redux, defines the handling of users and items in the cart. Stripe is also used for credit card payments. On the server-side, the password is encrypted with CryptoJS, the access token can be obtained with JWT.`,
+    description: `The MERN app, which uses Redux and Firebase, defines the handling of users and items in the cart. Stripe is also used for credit card payments. On the server-side, the password is encrypted with CryptoJS, the access token can be obtained with JWT.`,
     image: "https://live.staticflickr.com/65535/52005120993_0969c57259_k.jpg",
     url: "https://deployretry.herokuapp.com/",
     code: "https://github.com/yoshino9397/Mern-EcommerceApp-Final",
